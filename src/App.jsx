@@ -14,11 +14,11 @@ const App = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path='/' element={<ListCar />} />
-        <Route path='cardetail' element={<CarDetail />} />
-        <Route path='carinput' element={<InputCar />} />
-        <Route path='cardetail/caredit' element={<EditCar />} />
-        <Route path='cardetail/dataedit' element={<EditData />} />
+        <Route path='SJA/' element={<ListCar />} />
+        <Route path='SJA/cardetail' element={<CarDetail />} />
+        <Route path='SJA/carinput' element={<InputCar />} />
+        <Route path='SJA/cardetail/caredit' element={<EditCar />} />
+        <Route path='SJA/cardetail/dataedit' element={<EditData />} />
       </Routes>
     </div>
   )
