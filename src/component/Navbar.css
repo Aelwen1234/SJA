@@ -1,0 +1,54 @@
+.navigate {
+    background-image: linear-gradient(90deg, rgba(46, 46, 46, 1) 0%, rgba(79, 79, 79, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.suksesjayaauto {
+    display: flex;
+    margin: auto 0;
+}
+
+.text{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+  
+.item {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+  
+.title {
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
+    box-sizing: border-box;
+    height: 100%;
+    margin-left: 20px;
+}
+  
+.item:hover {
+    background-color: palevioletred;
+}
+
+.icon {
+    color:white;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    padding-left: 15px;
+    font-size: 40px;
+}
+

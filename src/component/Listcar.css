@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+
+.container{
+  padding-top: 50px;
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 200px;
+    background-color: gainsboro;
+}
+
+.header-list{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.input-wrapper{
+    background-color: white;
+    border-radius: 50px;
+    width: 50%;
+    padding: 10px;
+    height: 70px;
+    box-shadow: 0 0 0 gray;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+    font-family: 'Catamaran', sans-serif;
+}
+  
+input {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    padding-left: 20px;
+    font-family: inherit;
+    color: black;
+  }
+  
+input:focus{
+    outline: none;
+}
+
+::placeholder {
+  font-family: 'Catamaran', sans-serif;
+    color: black;
+    opacity: 1; /* Firefox */
+    font-style: italic;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+   font-family: 'Catamaran', sans-serif;
+   font-style: italic;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+   font-family: 'Catamaran', sans-serif;
+   font-style: italic;
+  }
+
+  #search-icons{
+    color: royalblue;
+    font-size: 50px;
+    margin-left: 10px;
+  }
+
+  .container-list-mobil{
+    width: 70%;
+    border-radius: 20px;
+    word-spacing: 2px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list{
+    list-style: none;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .listItem{
+    padding: 10px;
+    border: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0,4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: large;
+  }
+
+  .listItem:hover{
+    background-color: cadetblue;
+  }
+
+  .tabel_mobil tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .tabel_mobil{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .tabel_mobil td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .tabel_mobil tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+
+  .tabel_mobil tr:hover{
+    background-color: #f2f2f2;
+  }

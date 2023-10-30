@@ -1,0 +1,39 @@
+.grid {
+    background-image: linear-gradient(90deg, rgba(41, 151, 255, 1) 17%, rgba(24, 202, 247, 1) 100%);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto minmax(160px, auto) auto;
+    grid-template-areas: 
+      'header header'
+      'leftbar main'
+      'footer footer';
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+  
+  .page-header {
+    grid-area: header;
+  }
+  
+  .page-leftbar {
+    grid-area: leftbar;
+  }
+  
+  .page-main {
+    grid-area: main;
+  }
+  
+  .page-footer {
+    grid-area: footer;
+  }
+  
+  .content {
+    position: relative;
+    color: #242424;
+    background-color: green;
+    text-align: justify;
+    font-weight: 600;
+    box-sizing: border-box;
+    height: 100%;
+    padding: px;
+  }
