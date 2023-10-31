@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const InputCar = () => {
 
@@ -18,6 +19,8 @@ const InputCar = () => {
     const [bahan_bakar, setBahan_bakar] = useState("")
     const [keterangan, setKeterangan] = useState("")
     const [lokasi, setLokasi] = useState("")
+
+    const navigate = useNavigate()
 
 
     const handleSubmit = async () => {
@@ -65,6 +68,7 @@ const InputCar = () => {
         })
             .then(response => response.json())
             .then(res => console.log(res))
+            .then(navigate('SJA/'))
             .catch(err => console.log(err))
     }
 

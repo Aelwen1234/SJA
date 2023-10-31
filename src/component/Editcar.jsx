@@ -47,7 +47,7 @@ const edit = () => {
         })
             .then((response) => response.json())
             .then(res => console.log(res))
-            .then(navigate('/'))
+            .then(navigate('SJA/'))
     }
 
     return (
