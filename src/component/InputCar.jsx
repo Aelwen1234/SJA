@@ -16,7 +16,7 @@ const InputCar = () => {
     const [harga_jual, setHarga_jual] = useState(Number)
     const [jualataubelum, setJualataubelum] = useState(Boolean)
     const [plat, setPlat] = useState("")
-    const [bahan_bakar, setBahan_bakar] = useState("")
+    const [bahan_bakar, setBahan_bakar] = useState(String)
     const [keterangan, setKeterangan] = useState("")
     const [lokasi, setLokasi] = useState("")
 
@@ -69,7 +69,6 @@ const InputCar = () => {
             .then(response => response.json())
             .then(res => console.log(res))
             .then(navigate('SJA/'))
-            .catch(err => console.log(err))
     }
 
     return (
