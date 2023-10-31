@@ -2,9 +2,11 @@ import React from "react";
 import { AiFillCar } from 'react-icons/ai'
 import './Navbar.css'
 import logo from '../assets/logo.png'
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-    return(
+    const navigate = useNavigate();
+    return (
         <nav className="navigate">
             <div className="suksesjayaauto">
                 <div className="icon">
@@ -13,8 +15,13 @@ const Navbar = () => {
             </div>
 
             <div className="text">
-                <a className="item">Home</a>
-                <a className="item">Input Car</a>
+
+                <a className="item" onClick={() => {
+                    navigate('SJA/')
+                }}>Home</a>
+                <a className="item" onClick={() => {
+                    navigate('SJA/carinput')
+                }}>Input Car</a>
                 <a className="item">Sign In</a>
                 <a className="item">Sign Up</a>
             </div>
